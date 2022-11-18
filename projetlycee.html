@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Mes projets</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">   <!--Barre de navigation-->
+            <!--une div par image afin de pouvoir les placer correctement avec le justify-content-->
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="index.html" class='nav-item'><img src="images/presentation2.png" alt="emoji de presentation"  width="75"></a>
+            </div>     
+
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="projetlycee.html" class='nav-item'> <img src="images/projets2.PNG" alt="projets"  width="77"></a>
+            </div>
+            
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="contact.html" class='nav-item'><img src="images/contact2.png" alt="contact"  width="87"></a>
+            </div>
+
+            <div>
+                <ul class="menu" id="menu">
+                <!--chaque ligne du tableau mene aux differentes pages existantes-->
+                    <li>
+                        <a class="texte_menu" href="index.html">Accueil</a>
+                    </li>    
+                    <li>
+                        <a class="texte_menu" href="projetlycee.html">projets lycées</a>
+                    </li>
+                    <li>
+                        <a class="texte_menu" href="projetBTS.html">projets BTS</a>
+                    </li>
+                    <li>
+                        <a class="texte_menu" href="contact.html">Contact</a>
+                    </li>
+                
+                    <a class="croix" href="#presentation"><!--affiche le menu grace au # qui est relié avec l'id "presentation"-->
+                        <span >   <!--on prend une icone dans icons8-->
+                        <img src="images/croix.png" alt="fermeture de la fenetre du menu" class="croix">
+                        </span>
+                    </a>
+                </ul>
+                    <a class="menu_burger" href="#menu">    <!--affiche le menu grace au # qui est relié avec l'id "menu"-->
+                        <span >
+                        <img src="images/menu.png" alt="menu" width="35">
+                        </span>
+                    </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titre">
+            <br>
+            <h1 class="titre_hautdepage"><i><b>Mes projets</b></i></h1> 
+        </div>
+        <br>
+
+        <section class="container"> <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="partie2" >   <!--j'ai créé une class unique pour toutes mes parties afin qu'elles soient toutes identiques-->
+                <div class="haut" >
+                    <div>
+                       
+                        <p>Voici mes principaux projets réalisés pendant mes années de lycée:</p>
+                    </div>
+                    
+                    <div class="boutons" >
+                        <a href="projetlycee.html"><button type="button" class="bouton">Projets lycées</button></a>
+                        <a  href="projetBTS.html"><button type="button" class="bouton">Projets BTS</button></a>  
+                    </div>
+                    <br>
+                
+
+                    <div class="img">
+                        <!--lien vers les dossiers des differents projets insérés dans les images correspondantes-->
+                        <div>
+                            <a href="#mario"><img src="images/mario.png" alt="image du personnage de jeu vidéo Mario" width="125" class="imageprojet"></a>      
+                        </div>
+                        <div>
+                            <a href="#lucinda"><img src="images/projet2.png" alt="image d'un personnage de jeu vidéo" width="225" class="imageprojet"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        
+        <div class="titre" id="mario">  <!--l'id sert a créer un lien: lorsque l on appuie sur l'image en haut de la page, cela nous mene directement a la description du projet correspondant-->
+            <h1 class="titre_hautdepage"><i><b>Mario</b></i></h1>   <!--class utilisé pour mettre le titre en grand, blanc et le centrer-->
+        </div>
+
+        <section class="container"> <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="description" >  <!--class utilisé pour améliorer la mise en page des differents projets-->
+                <div>
+                    <div>
+                        Nous avons revisité ce jeu à notre façon ! En effet, ce jeu correspond à tous : des bons
+                    au mauvais perdants, tout le monde peut aimer y jouer !
+                    </div>          
+                    <br>
+                    <div>
+                        • Mario doit toucher Gooma (1 point)
+                    </div>
+                    <div>
+                        • Mario doit toucher les oiseaux (10 points)
+                    </div>
+                    <br>
+                    <div>
+                        → cela augmente le compteur de points, affiché en haut de l’écran
+                    </div>
+                </div>
+                <div>
+                    <img src="images/jeu_mario.PNG" alt="capture d'ecran du jeu" width="450" class="imageprojet">   <!--affichage d'une image a cote du texte-->
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        
+        <div class="titre" id="lucinda">    <!--l'id sert a créer un lien: lorsque l on appuie sur l'image en haut de la page, cela nous mene directement a la description du projet correspondant-->
+            <h1 class="titre_hautdepage"><i><b>Lucinda</b></i></h1> <!--class utilisé pour mettre le titre en grand, blanc et le centrer-->
+        </div>
+
+        <section class="container"> <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="description" >  <!--class utilisé pour améliorer la mise en page des differents projets-->
+                <div>
+                    <div>
+                        Ce jeu est une sorte de jeu d’aventure ou le joueur doit retrouver une amie disparue dans la ville. Le personnage doit donc mener l'enquête pour la retrouver.
+                    </div>          
+                    <br>
+                    <div>
+                        Ainsi, le personnage se déplace de carte en carte en récupérant des indices le long de son parcours. Il pourra également entrer dans certaines maisons, communiquer avec des personnages non joueurs, …
+                    </div>
+                    <br>
+                    <div>
+                        J’ai pu travailler sur ce jeu pendant un travail de groupe au lycée, il m’a permis de développer mes connaissances en python en mettant des cartes, des personnages, ….
+                    </div>
+                </div>
+                <div>
+                    <img src="images/jeu_lucinda.PNG" alt="capture d'ecran du jeu" width="450" class="imageprojet"> <!--affichage d'une image a cote du texte-->
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+    <footer> <!--pied de page-->
+        <div class="copyright">
+           ©Léonard Chloé  
+        </div>
+        <div class="logofooter"><!--affichage des logos dans le pied de page-->
+            <a href="https://www.instagram.com/chloeleo04/"><img src="images/insta.png" alt="logo insta" style="padding:15px" class="imageprojet"></a>  
+            <a href="https://www.linkedin.com/in/chloe-leonard-307293246/"><img src="images/linkedin.png" alt="logo linkedin" style="padding:15px" class="imageprojet"></a>  
+        </div>
+    </footer>
+</body>
+</html>

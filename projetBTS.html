@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Mes projets</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">   <!--Barre de navigation-->
+            <!--une div par image afin de pouvoir les placer correctement avec le justify-content-->
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="index.html" class='nav-item'><img src="images/presentation2.png" alt="emoji de presentation"  width="75"></a>
+            </div>     
+
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="projetlycee.html" class='nav-item'> <img src="images/projets2.PNG" alt="projets"  width="77"></a>
+            </div>
+            
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="contact.html" class='nav-item'><img src="images/contact2.png" alt="contact"  width="87"></a>
+            </div>
+
+            <div>
+                <ul class="menu" id="menu">
+                <!--chaque ligne du tableau mene aux differentes pages existantes-->
+                    <li>
+                        <a class="texte_menu" href="index.html">Accueil</a>
+                    </li>    
+                    <li>
+                        <a class="texte_menu" href="projetlycee.html">projets lycées</a>
+                    </li>
+                    <li>
+                        <a class="texte_menu" href="projetBTS.html">projets BTS</a>
+                    </li>
+                    <li>
+                        <a class="texte_menu" href="contact.html">Contact</a>
+                    </li>
+                
+                    <a class="croix" href="#presentation"><!--affiche le menu grace au # qui est relié avec l'id "presentation"-->
+                        <span >   <!--on prend une icone dans icons8-->
+                        <img src="images/croix.png" alt="fermeture de la fenetre du menu" class="croix">
+                        </span>
+                    </a>
+                </ul>
+                    <a class="menu_burger" href="#menu">    <!--affiche le menu grace au # qui est relié avec l'id "menu"-->
+                        <span >
+                        <img src="images/menu.png" alt="menu" width="35">
+                        </span>
+                    </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titre">
+            <br>
+            <h1 class="titre_hautdepage"><i><b>Mes projets</b></i></h1> 
+        </div>
+        <br>
+        <section class="container"> <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="partie2" >   <!--j'ai créé une class unique pour toutes mes parties afin qu'elles soient toutes identiques-->
+                <div class="haut">
+                    <div>
+                        
+                        <p>Voici mes principaux projets réalisés pendant mon année de BTS:</p>
+                    </div>
+                    
+                    <div class="boutons" >
+                        <a href="projetlycee.html"><button type="button" class="bouton">Projets lycées</button></a>
+                        <a  href="projetBTS.html"><button type="button" class="bouton" >Projet BTS</button></a>  
+                    </div>
+                    <br>
+                </div>
+                
+
+                <div class="imgBTS">
+                    <!--lien vers les dossiers des differents projets insérés dans les images correspondantes-->
+                    <a href="#classroom_player"><img src="images/musique2.png" alt="illustration lecteur musique" width="250"></a>    
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div class="titre" id="classroom_player"> <!--l'id sert a créer un lien: lorsque l on appuie sur l'image en haut de la page, cela nous mene directement a la description du projet correspondant-->
+            <h1 class="titre_hautdepage"><i><b>Le classroom player</b></i></h1> <!--class utilisé pour mettre le titre en grand, blanc et le centrer-->
+        </div>
+
+        <section class="container"> <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="description">   <!--class utilisé pour améliorer la mise en page des differents projets-->
+                <div>
+                    <br>
+                    <h4>Présentation du projet :</h4>
+                    <div>
+                        Ce projet vise en particulier des salles de classes ou des salles susceptibles de contenir plusieurs personnes. 
+                        Il s’agit d’un lecteur de musique qui adapte le son de la musique en fonction du bruit dans la salle.
+                    </div>
+                    <br>
+                    <div>
+                        En effet, lorsqu’une personne parle, le son diminue automatiquement et remonte lorsque le micro capte moins de bruit.
+                        On peut également utiliser ce lecteur pour que plusieurs personnes choisissent leurs propres musiques : 
+                        en fonction du nombre de personne intéressée par une musique ou playlist, une playlist dynamique est créée, de façon à avoir une
+                        liste de musique qui plaît à tout le monde.
+                    </div>
+                    <div>
+                        Les fonctions de commandes habituelles sont présentes : skip, pause, stop, Play/reprise, ainsi qu'un contrôle du volume permettant de 
+                        paramétrer quel volume le lecteur ne doit pas dépasser, ainsi que la variation du volume
+                    </div>
+
+                </div>
+                <div>
+                    <img src="images/musique2.png" alt="image d une note de musique" width="450" class="imageprojet">    <!--affichage d'une image a cote du texte-->
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+
+
+    <footer> <!--pied de page-->
+        <div class="copyright">
+            ©Léonard Chloé  
+        </div>
+        <div class="logofooter"><!--affichage des logos dans le pied de page-->
+            <a href="https://www.instagram.com/chloeleo04/"><img src="images/insta.png" alt="logo insta" style="padding:15px" class="imageprojet"></a>  
+            <a href="https://www.linkedin.com/in/chloe-leonard-307293246/"><img src="images/linkedin.png" alt="logo linkedin" style="padding:15px" class="imageprojet"></a>  
+        </div>
+    </footer>
+
+</body>
+</html>
