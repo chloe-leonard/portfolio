@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav >   <!--Barre de navigation-->
+            <!--une div par image afin de pouvoir les placer correctement avec le justify-content-->
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="index.html" class='nav-item'><img src="images/presentation2.png" alt="emoji de presentation"  width="75"></a>
+            </div>     
+
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="projetlycee.html" class='nav-item'> <img src="images/projets2.PNG" alt="projets"  width="77"></a>
+            </div>
+            
+            <div>
+                <!--image avec un lien pour se deplacer au bon endroit de la page-->
+                <a href="contact.html" class='nav-item'><img src="images/contact2.png" alt="contact"  width="87"></a>
+            </div>
+
+            <div>
+                <ul class="menu" id="menu">
+                <!--chaque ligne du tableau mene aux differentes pages existantes-->
+                    <li>
+                        <a class="texte_menu" href="index.html">Accueil</a>
+                    </li>    
+                    <li>
+                        <a class="texte_menu" href="projetlycee.html">projets lycées</a>
+                    </li>
+                    <li>
+                        <a class="texte_menu" href="projetBTS.html">projets BTS</a>
+                    </li>
+                    <li>
+                        <a class="texte_menu" href="contact.html">Contact</a>
+                    </li>
+                
+                    <a class="croix" href="#presentation"><!--affiche le menu grace au # qui est relié avec l'id "presentation"-->
+                        <span >   <!--on prend une icone dans icons8-->
+                        <img src="images/croix.png" alt="fermeture de la fenetre du menu" class="croix">
+                        </span>
+                    </a>
+                </ul>
+                    <a class="menu_burger" href="#menu">    <!--affiche le menu grace au # qui est relié avec l'id "menu"-->
+                        <span >
+                        <img src="images/menu.png" alt="menu" width="35">
+                        </span>
+                    </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titre">
+            <br>
+            <h1 class="titre_hautdepage"><i><b>Portfolio</b></i></h1> 
+        </div>
+        <br>
+
+        <section class="container">     <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="partie">    <!--j'ai créé une class unique pour toutes mes parties afin qu'elles soient toutes identiques-->
+                <div class="col-7"> <!--pour séparer chaque container en 2 parties non égales-->
+                    <h2 class = "text" id="presentation">Ma présentation :</h2>  
+                    <!--la class text est utilisé pour personnaliser la police et l'id est utilisé comme un lien pour pouvoir accéder a cette partie du site a partir de l'image qui est dans la barre de navigation-->
+                    <p>Je m'appelle Chloé, j'ai 18 ans et je suis actuellement en BTS SIO 
+                        (services informatiques aux organisations).</p>
+                    <p>Ayant découvert l'informatique et le développement au lycée, 
+                        c'est désormais dans ce domaine que j'aimerai me lancer. </p>
+                    <p>Je suis patiente et curieuse mais j'aime surtout trouver des 
+                        solutions en cas de difficultés afin d'apprendre et de m'améliorer. </p>
+
+                        <br>  <!--saut de ligne-->
+                    <h2 class="text">Mon parcours :</h2>  <!--personnalisation de la police d'ecriture-->
+                    <br>
+                    <div class="bac">   
+                        
+                        
+                        <img src="images/bac.png" alt="diplome de baccalauréat général" width="250">
+                        <!--j'ai créée un tableau afin de pouvoir faire une indentation pour mes spécialités afin de rendre la page plus claire -->
+                        <br>
+                        <br>
+                        <li style="list-style:none">
+                            <ul>
+                                • Brevet des collèges(2019)
+                            </ul>
+                            <ul>• Baccalauréat général avec les spécialités:(2022)
+                                <li style="list-style:none">
+                                </li>
+                                <li style="list-style:none">
+                                    <ul>• Mathématiques</ul>
+                                    <ul>• N.S.I.(Numérique et Sciences de l'Informatique)</ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <br>
+                    
+                    <h2 class="text">Mon CV :</h2>    <!--personnalisation de la police d'écriture-->
+                    <br>
+                    <h3>Mes expériences professionnelles</h3>   <!--ecrit en gras sous forme de titre-->
+                    <br>
+                        <p>• Stage découverte dans une entreprise de réparation et installation informatique</p>
+                    <br>
+                    <h3>Mes centres d'intérêts :</h3>
+                    <br>
+                        <p>• Lecture</p>
+                        <p>• Informatique</p>
+                </div>
+                <div class="col-4">  <!--pour séparer chaque container en 2 parties non égales-->
+                    <img src="images/presentation2.png" alt="image d'un emoji de presentation" class="imgpresentation">   <!--insertion de l'image avec un espace de 5pixels autour de l'image pour pouvoir eviter que le texte soit collé a l'image-->
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="container"> <!--class utilisé dans bootstrap et qui va me servir a séparer mes differentes parties-->
+            <div class="partie">  <!--j'ai créé une class unique pour toutes mes parties afin qu'elles soient toutes identiques-->
+                <div class="col-4">  <!--pour séparer chaque container en 2 parties non égales-->
+                    <img src="images/competences2.png" width="90%"  alt="image d un logo qualités et compétences">  <!--insertion de l image avec une talle de 90%-->
+                </div>
+                <div class="col-8" >   <!--pour séparer chaque container en 2 parties non égales-->
+                    <h2 class="text" id="competences">Mes compétences</h2>  <!--l'id est utilisé comme un lien pour pouvoir accéder a cette partie du site a partir de l'image qui est dans la barre de navigation-->
+                    <br>
+                    <h3>• Compétences acquises :</h3>
+                     <br>
+                        <p>Durant les années de lycée, j'ai pu découvrir et apprendre des langages tels que le python, 
+                            le MYSQL mais aussi des bases d'HTML/CSS. 
+                        </p>
+                
+                     
+                    <h3>• Compétences en cours d'apprentissage :</h3>
+                    <br>
+                    <p>Je suis actuellement en études afin d'approfondir mes connaissances dans les langages que j'ai dejà travaillé.
+                        J'apprend également le PHP.
+                    </p>  
+                </div>
+            </div>
+        </section>
+        <br>
+        
+        <br>   
+    </main> 
+    <footer> <!--pied de page-->
+        <div class="copyright">
+            ©Léonard Chloé  
+        </div>
+        <div class="logofooter"><!--affichage des logos dans le pied de page-->
+            <a href="https://www.instagram.com/chloeleo04/"><img src="images/insta.png" alt="logo insta" style="padding:15px" class="imageprojet"></a>  
+            <a href="https://www.linkedin.com/in/chloe-leonard-307293246/"><img src="images/linkedin.png" alt="logo linkedin" style="padding:15px" class="imageprojet"></a>  
+        </div>
+    </footer>
+    
+   
+</body>
+</html>

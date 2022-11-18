@@ -1,0 +1,292 @@
+/*style de la barre de navigation*/
+nav{
+    display:flex;       /*aligne les differentes div de la nav*/
+    justify-content: space-between;     /*crée des espaces identiques entre les images*/
+    background-color:transparent;     /*couleur de la barre de navigation*/
+    padding:2px 50px 2px 50px;      /*laisse des marges a gauche et a droite de la barre*/
+    
+}
+/*style du corps de la page*/
+body {
+    background-image:url("images/fond2.jpg");       /* fond du corps de la page */
+    background-size: cover; 
+    
+}
+
+/*animation de tous les textes en h1 (titre)*/
+h1 {
+    transform: translateY(-1800px);     /*position des textes avant l animation*/
+    animation: 1.5s slideIn  forwards 0.5s;     /*parametre de l animation (vitesse et temps de demarrage)*/
+}
+
+@keyframes slideIn {    /*mots clés utilisé pour faire glisser le texte*/
+    100% {
+      transform: translateY(0px);   /* anime le texte jusqu a son emplacement prevu (px) */
+    }
+  }
+/*parametre des textes animés*/
+.titre_hautdepage {
+    color:white;
+    font-size:xxx-large;    /*taille de la police*/
+    font-family: 'Lobster', cursive;    /*nom de la police*/
+
+}
+
+/*personnalise l'affichage du titre sur la page */
+.titre{
+    text-align: center;     
+    font-family: 'Lobster', cursive;    /*changement de police d'ecriture*/
+    font-size:x-large;      /*agrandit la taille du texte*/
+   
+}
+/*centre tous les titres en h2 dans leurs div*/
+.text {
+    text-align:center;
+    font-family: 'Lobster', cursive;
+}
+/*permet de positionner l'image et le texte l'un a cote de l'autre*/
+.bac {
+    display:flex;
+}
+/*style utilisé par les differentes parties que l 'on peut retrouver dans la page*/
+.partie{
+    display:flex;
+    background-color: transparent;   
+    color:white;  
+    font-family: 'Lobster', cursive;
+    justify-content:space-between;
+    border-radius:15px;     /*arrondit les angles du container*/
+    padding:15px;
+    border:dashed;
+    
+}
+/*style utilisé uniquement par la partie projet afin de pouvoir mettre les titres et le texte au dessus des images*/
+.partie2{
+    background-color: transparent; 
+    font-family: 'Lobster', cursive;
+    justify-content: space-between;
+    display:block;
+    border-radius:15px;
+    padding:15px;
+    color:white;
+    border:dashed;
+
+}
+
+.description {
+    background-color: transparent;
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    font-family: 'Lobster', cursive;
+    width:100%;
+    color:white;
+    border:dashed;
+
+}
+
+/*centre le texte de la partie projet*/
+.haut{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+/*Place les 2 images l'une a cote de l autre en les centrant*/
+.img {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 30%;
+    text-align-last:justify;   
+}
+
+/*parametre de l image de presentation*/
+.imgpresentation {
+    margin-block:5px;
+    width:90%;
+}
+
+/*parametre de l image du projet BTS*/
+.imgBTS {
+    text-align: center;
+}
+
+/*Style de la div contact*/
+.contact{
+    background-color: transparent;   
+    border-radius:15px;
+    display:flex;
+    justify-content: space-between;
+    padding: 5%;
+    font-family: 'Lobster', cursive;
+    color:white;
+    border:dashed;  /*bordure en tirets*/
+}
+
+/*gere la position des logos dans la div contact*/
+.logos {
+    display:block;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+/*gere la longueur des zones de texte du formulaire*/
+.form{
+    width:140%;     
+}
+
+/*deplace le formulaire de contact complet afin de le centrer*/
+.form_contact{
+    padding:25px;
+    margin-right:160px;
+    width:250px;
+
+}
+
+/*donne un style au bouton d'envoi du formulaire*/
+.bouton{
+    background-color: #71b5da;
+    border-radius: 15px;
+    padding:10px;   /*espace autour de l'image de 10px*/
+    cursor:pointer;
+    transition: background-color ease .8s;
+    font-family: 'Lobster', cursive;
+}
+
+/*change la couleur du bouton lorsque le curseur passe sur le bouton*/
+.bouton:hover{
+    background-color: #D3EEFD;
+}
+
+/*style de la barre de bas de page*/
+footer{
+    background-color:transparent;
+    display:flex;
+    align-items:center;
+    color:white;
+
+}
+
+.copyright{
+    margin-left:37%;
+    font-family: 'Lobster', cursive;
+}
+
+.logofooter {
+    margin-left:5%;
+    padding:0 5%;
+    display:flex;
+
+}
+
+.menu_burger {
+    position: fixed;
+    /* place au dessus du reste de la page*/
+    z-index: 2;
+    background: white;
+    border: none;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    font-family: 'Lobster', cursive;
+    
+  }
+  
+.menu {
+    position: fixed;
+    /* place le menu au dessus de la page */
+    z-index: 3;
+    /*position du menu*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    /* Style du menu*/
+    list-style: none;   /*enleve les puces devant les textes*/
+    background: rgb(0, 0, 0);
+    display: flex;
+    text-align: center; /*centre le texte*/
+    font-family: 'Lobster', cursive;
+    padding: 10% 0;     /*laisse un espace au dessus et en dessous du menu*/
+    flex-direction: column;     /*place les textes dans une meme colonne*/
+   
+    transform: translateY(-100%);   /*animation : le texte apparait par en haut*/
+    transition: transform 0.5s ease;    /*vitesse de l'animation*/
+  }
+  /*style du texte du menu(couleur et espacement entre les lignes*/
+.texte_menu {
+    color:white;
+    text-decoration: None;
+    line-height:75px;   /*reglage interligne*/
+    font-size:xx-large;
+    font-family: 'Lobster', cursive;
+
+  }
+  /*parametre du bouton de fermeture du menu*/
+.croix {
+    position:absolute;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    /*position de l'icone de la croix sur la page */
+    top: 1rem;
+    right: 1rem;
+    width:25px;
+   }
+
+.menu:target {
+    /* affichage du menu */
+    transform: translateY(0);
+  }
+
+/*responsive   adaptation du site pour l'ouvrir avec des ecrans de differentes tailles*/
+
+/*version tablette*/
+@media (max-width: 768px) {
+    .bac {
+        display:block;
+        width:500;
+    }
+    .description {
+        display:block;
+    }
+    .copyright {
+        margin-left:27%;
+    }
+    .form_contact {
+        margin-right:100px;
+    }
+    
+    .texte_menu{
+        font-size:large;
+    }
+    .menu {padding:25% 0 ;
+    }
+}
+
+/*version mobile*/
+@media(max-width:500px) {
+    .copyright {
+        margin-left:15%;
+    }
+    .form_contact{
+        margin-right:30px;
+        width:80%;
+    }
+    .img{
+        display:block;
+    }
+    .texte_menu{
+        font-size:large;
+    }
+    .menu {
+        padding:25% 0;
+    }
+    .description {
+        display:block;
+    }
+    .imageprojet {
+        width:80%;
+    }
+}
